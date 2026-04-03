@@ -1,65 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Tech Fest</title>
-    <link rel="stylesheet" href="web.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lumière — An Evening of Sound</title>
+  <link rel="stylesheet" href="web.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav>
-        <h2>TechFest 2026</h2>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#speakers">Speakers</a></li>
-            <li><a href="#register">Register</a></li>
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__logo">LUMIÈRE</div>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#lineup">Lineup</a></li>
+      <li><a href="#venue">Venue</a></li>
+      <li><a href="#tickets" class="nav__cta">Get Tickets</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg">
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__orb hero__orb--3"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">One Night Only &nbsp;·&nbsp; 12 September 2026</p>
+      <h1 class="hero__title">
+        <span class="hero__title--line1">An Evening</span>
+        <span class="hero__title--line2"><em>of Sound</em></span>
+      </h1>
+      <p class="hero__subtitle">A curated concert experience where classical mastery meets contemporary resonance, held beneath the open sky.</p>
+      <div class="hero__actions">
+        <a href="#tickets" class="btn btn--primary">Reserve Your Seat</a>
+        <a href="#lineup" class="btn btn--ghost">View Lineup</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about__grid">
+      <div class="about__label">About the Event</div>
+      <div class="about__body">
+        <h2 class="about__heading">Where music becomes <em>memory</em></h2>
+        <p>Lumière is an invitation to pause. A single evening of carefully chosen performances, intimate staging, and an atmosphere that lingers long after the final note fades.</p>
+        <p>From sweeping orchestral arrangements to solo acoustic reveries, every act is selected for its emotional depth and artistic integrity.</p>
+      </div>
+      <div class="about__stats">
+        <div class="stat">
+          <span class="stat__number">8</span>
+          <span class="stat__label">Performers</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">1</span>
+          <span class="stat__label">Night Only</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number">500</span>
+          <span class="stat__label">Seats</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="divider">
+    <span>✦</span><span>✦</span><span>✦</span>
+  </div>
+
+  <!-- LINEUP -->
+  <section class="lineup" id="lineup">
+    <div class="lineup__header">
+      <p class="section-label">The Lineup</p>
+      <h2>Tonight's <em>Artists</em></h2>
+    </div>
+    <div class="lineup__list">
+
+      <div class="artist artist--featured">
+        <div class="artist__time">8:30 PM</div>
+        <div class="artist__info">
+          <h3 class="artist__name">Élara Voss</h3>
+          <p class="artist__genre">Neoclassical Piano</p>
+        </div>
+        <div class="artist__tag">Headliner</div>
+      </div>
+
+      <div class="artist">
+        <div class="artist__time">7:15 PM</div>
+        <div class="artist__info">
+          <h3 class="artist__name">The Solenne Quartet</h3>
+          <p class="artist__genre">Contemporary Chamber</p>
+        </div>
+      </div>
+
+      <div class="artist">
+        <div class="artist__time">6:00 PM</div>
+        <div class="artist__info">
+          <h3 class="artist__name">Marcello Rinaldi</h3>
+          <p class="artist__genre">Classical Guitar</p>
+        </div>
+      </div>
+
+      <div class="artist">
+        <div class="artist__time">5:00 PM</div>
+        <div class="artist__info">
+          <h3 class="artist__name">Doors Open</h3>
+          <p class="artist__genre">Welcome Reception & Wine</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VENUE -->
+  <section class="venue" id="venue">
+    <div class="venue__inner">
+      <div class="venue__text">
+        <p class="section-label">The Venue</p>
+        <h2>Château <em>du Soir</em></h2>
+        <p>Nestled among lantern-lit gardens, our venue offers impeccable acoustics and an ambience of understated grandeur. Valet parking and champagne reception included with all tickets.</p>
+        <address>14 Rue des Arts, Fontainebleau, France</address>
+      </div>
+      <div class="venue__visual">
+        <div class="venue__card">
+          <div class="venue__card-line">Doors Open</div>
+          <div class="venue__card-time">5:00 PM</div>
+          <div class="venue__card-line">Show Begins</div>
+          <div class="venue__card-time">6:00 PM</div>
+          <div class="venue__card-line">Headliner</div>
+          <div class="venue__card-time">8:30 PM</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKETS -->
+  <section class="tickets" id="tickets">
+    <div class="tickets__header">
+      <p class="section-label">Reserve Your Place</p>
+      <h2>Choose Your <em>Experience</em></h2>
+    </div>
+    <div class="tickets__grid">
+
+      <div class="ticket ticket--standard">
+        <div class="ticket__tier">Standard</div>
+        <div class="ticket__price">€ 120</div>
+        <ul class="ticket__perks">
+          <li>General Admission</li>
+          <li>Welcome Drink</li>
+          <li>Programme Booklet</li>
         </ul>
-    </nav>
+        <a href="#" class="btn btn--outline">Book Now</a>
+      </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Welcome to TechFest 2026</h1>
-        <p>Join us for innovation, learning, and fun!</p>
-        <a href="#register" class="btn">Register Now</a>
-    </section>
-
-    <!-- About -->
-    <section id="about">
-        <h2>About Event</h2>
-        <p>This college tech fest brings students together to explore new technologies, participate in competitions, and learn from experts.</p>
-    </section>
-
-    <!-- Schedule -->
-    <section id="schedule">
-        <h2>Schedule</h2>
-        <ul>
-            <li>10:00 AM - Opening Ceremony</li>
-            <li>11:00 AM - Coding Competition</li>
-            <li>2:00 PM - Tech Talks</li>
-            <li>5:00 PM - Prize Distribution</li>
+      <div class="ticket ticket--premium">
+        <div class="ticket__badge">Most Popular</div>
+        <div class="ticket__tier">Premier</div>
+        <div class="ticket__price">€ 240</div>
+        <ul class="ticket__perks">
+          <li>Priority Seating</li>
+          <li>Champagne Reception</li>
+          <li>Artist Meet & Greet</li>
+          <li>Exclusive Programme</li>
         </ul>
-    </section>
+        <a href="#" class="btn btn--primary">Book Now</a>
+      </div>
 
-    <!-- Speakers -->
-    <section id="speakers">
-        <h2>Speakers</h2>
-        <p>Industry experts and college alumni will share their knowledge and experiences.</p>
-    </section>
+      <div class="ticket ticket--patron">
+        <div class="ticket__tier">Patron</div>
+        <div class="ticket__price">€ 480</div>
+        <ul class="ticket__perks">
+          <li>Front Row Reserved</li>
+          <li>Private Dinner with Artists</li>
+          <li>Valet Parking</li>
+          <li>Signed Memorabilia</li>
+        </ul>
+        <a href="#" class="btn btn--outline">Book Now</a>
+      </div>
 
-    <!-- Register -->
-    <section id="register">
-        <h2>Register</h2>
-        <p>Click below to register for the event.</p>
-        <button>Register</button>
-    </section>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 TechFest | All Rights Reserved</p>
-    </footer>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__logo">LUMIÈRE</div>
+    <p class="footer__tagline">An Evening of Sound &nbsp;·&nbsp; 12 September 2026</p>
+    <div class="footer__links">
+      <a href="#">Instagram</a>
+      <a href="#">Spotify</a>
+      <a href="#">Contact</a>
+    </div>
+    <p class="footer__copy">© 2026 Lumière Events. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
